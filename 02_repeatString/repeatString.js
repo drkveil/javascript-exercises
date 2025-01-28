@@ -1,12 +1,9 @@
-let string = "";
-let i = 1;
-
-const repeatString = function() {
-    while (i <= 3){
-        string += "hey";
-        i++;
+const repeatString = function(string, num) {
+    addString = "";
+    for (let i = 1; i <= num; i++) {
+        addString += string;
     }
-    return string;
+    return addString;
 };
 
 // Do not edit below this line
