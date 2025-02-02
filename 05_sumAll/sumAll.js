@@ -1,12 +1,15 @@
-const sumAll = function(...numbers) {
-    let sum =  0;
-    for (i = 0; i < numbers.length; i++){
-        sum += numbers[i];
+const sumAll = function(firstNumber, lastNumber) {
+    deference = lastNumber - firstNumber;
+    sum = 0
+    for ( i = 0; i < deference; i++ ){
+        let added = sum += firstNumber;
+        firstNumber++;
     }
-    return sum;
+    finalSum = sum + firstNumber;
+    return finalSum;
 };
 
-console.log(sumAll(2, 3, 5, 7, 3, 5));
+console.log(sumAll(1, 4));
 
 // Do not edit below this line
 module.exports = sumAll;
