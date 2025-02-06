@@ -1,15 +1,24 @@
-const sumAll = function(firstNumber, lastNumber) {
-    deference = lastNumber - firstNumber;
-    sum = 0
-    for ( i = 0; i < deference; i++ ){
-        let added = sum += firstNumber;
-        firstNumber++;
+const sumAll = function(biggerNumber , smallerNumber) {
+    if (!Number.isInteger(biggerNumber) || !Number.isInteger(smallerNumber)){
+        return "ERROR";
+    }else if (smallerNumber > biggerNumber){
+        [smallerNumber, biggerNumber] = [biggerNumber, smallerNumber];
     }
-    finalSum = sum + firstNumber;
-    return finalSum;
-};
 
-console.log(sumAll(1, 4));
+    let sum = 0;
+    sum.t
+    console.log;
+
+    for (let i = smallerNumber; i <= biggerNumber; i++){
+        sum += i;
+    }
+
+    if (sum < 0){
+        return "ERROR";
+    }
+
+    return sum;
+};
 
 // Do not edit below this line
 module.exports = sumAll;
